@@ -10,4 +10,7 @@ Basic ( - ) JavaScript
 8. function
 9. params , arguments
 10. array
-11. push pop shift unshift
+11. push pop shift unshift splice
+12. object
+13. props vs methods
+14. updating object props

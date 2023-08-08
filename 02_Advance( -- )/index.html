@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+
+   <script>
+      // #####################difference of var let const#####################
+
+      // #1
+      //  two main version of javascript is es5(var) and es6(let const)
+
+      // #2
+      // var = function scope
+      // let/const = braces scoped
+
+      // #3
+      // var add itself to the window object
+      // let/const doesn't add itself to the window object
+
+      // window - there are many features in javascript but some of them are not js feature it is browser's feature which is inside window object ex.alert, propmp, console.log etc.
+
+      // window context api - windom, stack ,heap memory is in inside of window context api
+
+      // ##################### stack #####################
+
+      // heap memory - any calculation doesn't happen directly in computer its break into smaller part and that part is store in heap memory.
+
+      // ##################### execution context #####################
+
+      // Execution context is a imaginary container made when a function is called and it contain variable, function and lexical environment of this that function
+
+      // ##################### Lexical environment #####################
+
+      // LE is a behaviour of function where parent function cannot access the variable of child function
+      // function abc() {
+      //    var a = 10;
+      //    console.log(b); //error
+      //    function pqr() {
+      //       var b = 20;
+      //       console.log(a); //10            
+      //    }
+      //    pqr();
+      // }
+      // abc()
+
+      // ##################### How to copy reference data types #####################
+      // spread operator
+      // let arr = [1, 2, 3, 4, 5];
+      // let arr2 = [...arr];
+
+      // let obj = { name: "naim" };
+      // let obj2 = { ...obj }
+
+      // ##################### Truthy and falsy #####################
+      // whatever you write in javascript it belong only from two types truthy or falsy
+      // falsy : 0 false NaN undefined null document.all
+      // truthy : anything other than falsy.
+
+      // ##################### forEach forIn and dowhile #####################
+      // forEach is for array
+      // forin is for object (key)
+
+      // let arr = [1, 2, 3, 4, 5];
+      // let object = {
+      //    name: "naim",
+      //    age: 14,
+      //    number: 2
+      // }
+
+      // arr.forEach((val)=>{
+      //    console.log(val+2);
+
+      // });
+
+      // for (const key in object) {
+      //    console.log(key); //for key
+      //    console.log(object[key]); //for key values
+
+      // }
+
+
+      // ##################### forEach forIn and dowhile #####################
+
+      // A callback is a function passed as an argument to another function, which runs on the completion of main  func
+      // ex. setTimeout(
+      //   ()=>{} //call back function
+      //,2000)
+
+      // ##################### First class function #####################
+
+      // first class function is a concept in javascript where you can store a function in a variable
+      // const abc = (b) => {
+      //    b();
+      // };
+      // abc(() => console.log("abc"))
+
+      // ##################### how array are made in behind the scene #####################
+      // in javascript array is a object
+      // let arr = [1, 2, 3, 4, 5];
+      // console.log(typeof arr);
+      // console.log(Array.isArray(arr));
+      // arr = {
+      //    0: 1,
+      //    1: 2,
+      //    2: 3,
+      //    3: 4,
+      //    4: 5
+      // }
+
+      // ##################### how to delete properties in object #####################
+      let obj = {
+         name: "naim",
+         age: 19,
+
+      };
+      delete obj.age;
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script>
+</body>
+
+</html>
