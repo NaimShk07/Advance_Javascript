@@ -14,7 +14,7 @@ There are two folder is in this repository
 8. function
 9. params , arguments
 10. array
-11. push pop shift unshift 
+11. push pop shift unshift
 12. object
 13. props vs methods
 14. updating object props
@@ -38,3 +38,16 @@ There are two folder is in this repository
 15. First Class Functions
 16. How Arrays are made behind the scenes, How we can make negative indexes arrays in JS
 17. How to delete Object Prop
+
+## Advance Pro ( - - - ) JavaScript
+
+1. High order function
+2. Constructor function
+3. First class function
+4. New keyword
+5. iife
+6. prototype
+7. prototype inheritance
+8. this call apply bind
+9. pure & impure function
+10. closures
