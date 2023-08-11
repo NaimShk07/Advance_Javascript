@@ -8,6 +8,7 @@
 </head>
 
 <body>
+   <button>Click to check where "this" is pointing </button>
 
    <script>
       // ##################### Higher order function #####################
@@ -75,6 +76,7 @@
       // Prototype is a collection on helper function or method given by javascript to use
 
       // ##################### Prototypal Inheritance #####################
+
       // PI is method in js to connect one object to another object using __proto__
 
       // var human = {
@@ -82,11 +84,62 @@
       //    canTalk: true,
       //    canEat: true,
       // };
+
       // var naim = {
       //    age: 12,
       //    number: 1234,
       // };
-      // naim.__proto__ = human //now you can access human obj in naim obj with this
+      // naim.__proto__ = human //now you can access human obj in naim obj with this line
+
+      // ##################### This keyword #####################
+
+      // If you are inside { } bracket then you are in a local scope( object/function ) and outside of {} bracket is global scope.
+
+      // "This" keyword in javascript change its value in different context
+      // Global => window
+      // Fucntion => window
+      // Method => object
+
+      // console.log(this);
+
+      // function abc() { console.log(this); }
+      // abc();
+
+      // var obj = {name:'naim', method: function () { console.log(this); } };
+      // obj.method()
+
+      // In any method "this" always refer to its parent object
+
+      // let button = document.querySelector("button");
+      // button.addEventListener('click', function () {
+      //    console.log(this); // it will point toward button
+      // })
+
+      // 'this' keyword point what ever is written before addeventlistner
+
+      // ##################### Call Apply Bind #####################
+
+      // When you have one func and object ,you want run the func but by default func is pointing toward window and you want to change it to the another object 
+
+      // function abc(val1, val2, val3) {
+      //    console.log(this, val1, val2, val3);
+      // }
+      // let obj = { name: 'naim' };
+
+      // abc(1,2,3); //normal
+
+      // abc.call(obj, 1, 2, 3) //call
+
+      // abc.apply(obj,[1,2,3]) //apply
+
+      // var bindedVariable=abc.bind(obj,1,2,3) //Bind
+      // bindedVariable();
+
+
+
+
+
+
 
 
 
