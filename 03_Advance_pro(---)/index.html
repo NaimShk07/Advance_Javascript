@@ -35,7 +35,7 @@
 
       // ##################### First class function #####################
 
-      // First class fnc is were javascript fnc treat like a value/valriable
+      // First class fnc is were javascript fnc treated like a value/valriable
       // which you store in a variable and pass as an argument
 
       // ##################### New Keyword #####################
@@ -49,6 +49,46 @@
       // {
       //    name: "naim";
       // }
+
+      // ##################### IIFE #####################
+
+      // Immediately Invoked Function Expression
+      // It runs as soon as its defined, and we can make private variable inside them
+
+      // var ans = (function abcd() {
+      //    var privateVal = 10; //you can only access this value inside of this scope
+
+      //    return {
+      //       getter: function () {
+      //          console.log(privateVal);
+      //       },
+      //       setter: function (val) {
+      //          privateVal = val;
+      //       }
+      //    };
+      // })()
+
+      // ##################### Prototype #####################
+
+      // Whenever you create a object or array there are some built in propterties and methods are also made with that which we have didn't made, but we can use it like
+      // in object
+      // Prototype is a collection on helper function or method given by javascript to use
+
+      // ##################### Prototypal Inheritance #####################
+      // PI is method in js to connect one object to another object using __proto__
+
+      // var human = {
+      //    canWalk: true,
+      //    canTalk: true,
+      //    canEat: true,
+      // };
+      // var naim = {
+      //    age: 12,
+      //    number: 1234,
+      // };
+      // naim.__proto__ = human //now you can access human obj in naim obj with this
+
+
 
 
 
